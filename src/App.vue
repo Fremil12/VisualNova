@@ -1,6 +1,7 @@
 <script setup>
 import LandingPage from './components/LandingPage.vue';
 import ProfileSettings from './components/ProfileSettings.vue'
+import AboutUser from './components/AboutUser.vue';
 
 </script>
 
@@ -29,6 +30,7 @@ import ProfileSettings from './components/ProfileSettings.vue'
   <main>
     <LandingPage />
     <ProfileSettings/>
+    <AboutUser/>
   </main>
   <footer>
     <p>

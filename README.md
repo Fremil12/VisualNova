@@ -16,3 +16,7 @@ https://www.figma.com/design/Qu6oNbOZWATN1KOElQekoG
 **__Database__**:
 
 https://app.erdlab.io/designer/schema/1738684710
+
+**__Trello__**:
+
+https://trello.com/b/nhmGIVD1/vizsga-remek

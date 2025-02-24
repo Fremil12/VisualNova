@@ -2,6 +2,7 @@
 import LandingPage from './components/LandingPage.vue';
 import ProfileSettings from './components/ProfileSettings.vue'
 import AboutUser from './components/AboutUser.vue';
+import Game from './components/Game.vue';
 
 </script>
 
@@ -28,9 +29,7 @@ import AboutUser from './components/AboutUser.vue';
     </nav>
   </header>
   <main>
-    <LandingPage />
-    <ProfileSettings/>
-    <AboutUser/>
+    <Game/>
   </main>
   <footer>
     <p>

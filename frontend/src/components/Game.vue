@@ -19,11 +19,18 @@ import axios from 'axios';
 </template>
 
 <style scoped>
+
 section {
     border: 1px solid #707070;
     border-radius: 16px;
     box-shadow: #707070a9 0px 1px 1px;
     padding: 10px;
-    width: 25%;
+    width: 50%;
+    margin: auto;
 }
+
+section button {
+    margin-right: 15px;
+}
+
 </style>

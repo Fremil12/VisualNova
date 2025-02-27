@@ -12,7 +12,7 @@ $endpoint = $uriParts[2] ?? '';
 $method = $_SERVER['REQUEST_METHOD'];
 $id = $_GET['id'] ?? null;
 
-$endpointFile = __DIR__ . '/api/' . strtolower($endpoint) . '.php';
+$endpointFile = __DIR__ . '/endpoints/' . strtolower($endpoint) . '.php';
 
 if (file_exists($endpointFile)) {
     require $endpointFile;

@@ -1,5 +1,5 @@
 <?php
-// endpoints/option.php
+
 global $mysqli, $method, $id;
 
 switch($method) {

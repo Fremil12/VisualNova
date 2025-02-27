@@ -1,7 +1,7 @@
 <?php
-// endpoints/campaign.php
 global $conn, $method, $id;
 var_dump($method);
+
 switch($method) {
     case 'GET':
         if ($id) {
@@ -61,4 +61,3 @@ switch($method) {
         echo json_encode(["message" => "Method not allowed"]);
         break;
 }
-?>

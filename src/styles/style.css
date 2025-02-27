@@ -3,3 +3,11 @@
   line-height: 1.5;
   font-weight: 400;
 }
+
+html, body {
+  height: 100%; /* Make sure the html and body take full height */
+  margin: 0;    /* Remove default margin */
+  display: flex; /* Enable flexbox layout */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+}

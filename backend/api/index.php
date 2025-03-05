@@ -4,7 +4,7 @@ require './config/config.php';
 require './config/db.php';
 
 // Define project base folder (adjust as needed)
-$baseFolder = './backend/api';
+$baseFolder = 'Viszga_Remek/backend/api';
 
 // Remove base folder from request URI
 $uri = str_replace($baseFolder, '', parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
@@ -14,11 +14,12 @@ $endpoint = $uriParts[0] ?? ''; // Get endpoint (e.g., 'users')
 $method = $_SERVER['REQUEST_METHOD'] ?? 'UNKNOWN';
 $id = $_GET['id'] ?? null;
 
-$endpointFile = $baseFolder . '\endpoints\\' . strtolower($endpoint) . '.php';
+$endpointFile = $baseFolder . '/endpoints/' . strtolower($endpoint) . '.php';
 
 // Debugging Output (Remove in production)
 error_log("Endpoint: $endpoint, Method: $method");
 
+var_dump(file_exists($endpointFile));
 var_dump($endpointFile);
 if (file_exists($endpointFile)) {
     require $endpointFile;

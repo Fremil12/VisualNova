@@ -1,4 +1,4 @@
-class Option{
+export default class Option{
     #text;
     #next;
     #functions;
@@ -10,26 +10,28 @@ class Option{
         this.setText = this.setText.bind(this);
         this.setNext = this.setNext.bind(this);
         this.setFunctions = this.setFunctions.bind(this);
+        this.getText = this.getText.bind(this);
+        this.getNext = this.getNext.bind(this);
+        this.getFunctions = this.getFunctions.bind(this);
     }
 
-    function setText(param){
+    setText(param){
         this.#text = param;
     }
-    function setNext(param){
+    setNext(param){
         this.#next = param;
     }
-    function setFunctions(param){
+    setFunctions(param){
         this.#functions = param;
     }
     
-    function getText(){
+    getText(){
         return this.#text;
     }
-    function getNext(){
+    getNext(){
         return this.#next;
     }
-    function getFunctions(){
+    getFunctions(){
         return this.#functions;
     }
-
-}
+};

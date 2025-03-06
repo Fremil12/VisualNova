@@ -2,7 +2,7 @@
 // endpoints/functions.php
 global $conn, $method, $id;
 
-switch($method) {
+switch ($method) {
     case 'GET':
         if ($id) {
             $stmt = $conn->prepare("SELECT * FROM functions WHERE id = ?");
@@ -56,10 +56,10 @@ switch($method) {
         $stmt->close();
         echo json_encode(["message" => "Function deleted successfully"]);
         break;
-
-
+    case NULL:
+        http_response_code(404);
+        break;
     default:
         http_response_code(405);
         break;
 }
-?>

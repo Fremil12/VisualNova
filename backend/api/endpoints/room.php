@@ -56,6 +56,9 @@ switch ($method) {
         $stmt->close();
         echo json_encode(["message" => "Room deleted successfully"]);
         break;
+    case NULL:
+        http_response_code(404);
+        break;
     default:
         http_response_code(405);
         break;

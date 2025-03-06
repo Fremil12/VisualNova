@@ -5,7 +5,7 @@ global $conn, $method;
 $function_id = $_GET['function_id'] ?? null;
 $option_id = $_GET['option_id'] ?? null;
 
-switch($method) {
+switch ($method) {
     case 'GET':
         if ($function_id && $option_id) {
             $stmt = $conn->prepare("SELECT * FROM option_functions WHERE function_id = ? AND option_id = ?");
@@ -45,9 +45,10 @@ switch($method) {
         $stmt->close();
         echo json_encode(["message" => "Option function deleted successfully"]);
         break;
+    case NULL:
+        http_response_code(404);
+        break;
     default:
         http_response_code(405);
-        echo json_encode(["message" => "Method not allowed"]);
         break;
 }
-?>

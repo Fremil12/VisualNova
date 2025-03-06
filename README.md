@@ -1,4 +1,4 @@
-# This is a Project made for Vizsga Remek called name
+# This is a Project made for Vizsga Remek called VisualNova
 
 ## Project Collabolators:
 

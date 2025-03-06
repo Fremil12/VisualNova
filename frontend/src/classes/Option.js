@@ -3,9 +3,13 @@ class Option{
     #next;
     #functions;
     constructor(text,next,functions) {
-        this.
-        this.
-        this.
+        this.setText(text);
+        this.setNext(next);
+        this.setFunctions(functions);
+
+        this.setText = this.setText.bind(this);
+        this.setNext = this.setNext.bind(this);
+        this.setFunctions = this.setFunctions.bind(this);
     }
 
     function setText(param){
@@ -18,14 +22,14 @@ class Option{
         this.#functions = param;
     }
     
-    function getText(param){
-        this.#text = param;
+    function getText(){
+        return this.#text;
     }
-    function getNext(param){
-        this.#next = param;
+    function getNext(){
+        return this.#next;
     }
-    function getFunctions(param){
-        this.#functions = param;
+    function getFunctions(){
+        return this.#functions;
     }
 
 }

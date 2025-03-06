@@ -1,6 +1,5 @@
 <?php
 global $conn, $method, $id;
-var_dump($method);
 
 switch($method) {
     case 'GET':
@@ -56,8 +55,10 @@ switch($method) {
         $stmt->close();
         echo json_encode(["message" => "Campaign deleted successfully"]);
         break;
+    case NULL:
+        http_response_code(404);
+        break;
     default:
         http_response_code(405);
-        echo json_encode(["message" => "Method not allowed"]);
         break;
 }

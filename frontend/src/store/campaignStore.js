@@ -1,5 +1,6 @@
 import { reactive, ref } from "vue";
 import { defineStore } from "pinia";
+import axios from "axios";
 
 const campaignStore = defineStore('campaignStore', () => {
     const campaigns = ref([]);

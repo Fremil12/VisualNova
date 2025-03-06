@@ -1,5 +1,5 @@
 <script setup>
-import Game from './components/Game.vue';
+import CRoome from "./components/CRoom.vue"
 
 </script>
 
@@ -7,10 +7,11 @@ import Game from './components/Game.vue';
   <header>
   </header>
   <main>
-    <Game />
+    <CRoome />
   </main>
   <footer>
   </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>

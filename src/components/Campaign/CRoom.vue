@@ -5,7 +5,7 @@
 
     <section class="gameArea">
 
-        <img src="../images/DefaultRoomPicture.png">
+        <img src="../../images/DefaultRoomPicture.png">
 
         <div class="RoomTitle">
             <p>Room Title</p>

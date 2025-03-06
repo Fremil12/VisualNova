@@ -1,11 +1,14 @@
 <script setup>
-import Game from './components/game.vue';
+import CRoom from './components/Campaign/CRoom.vue';
+import Login from './components/Login.vue'
+import Register from './components/Register.vue'
+import Main from './components/Main.vue'
 
 
 </script>
 
 <template>
-  <Game/>
+  <Main />
 </template>
 
 <style scoped></style>

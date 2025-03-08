@@ -5,7 +5,7 @@ global $conn, $method, $id;
 switch ($method) {
     case 'GET':
         if ($id) {
-            $stmt = $conn->prepare("SELECT * FROM room WHERE id = ?");
+            $stmt = $conn->prepare("SELECT * FROM room WHERE campaign_id = ?");
             $stmt->bind_param("i", $id);
             $stmt->execute();
             $result = $stmt->get_result();

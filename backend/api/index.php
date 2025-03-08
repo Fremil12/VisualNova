@@ -15,7 +15,7 @@ $uriParts = array_values(array_filter(explode('/', $uri)));
 
 $endpoint = $uriParts[0] ?? ''; // Get endpoint (e.g., 'campaign')
 $method = $_SERVER['REQUEST_METHOD'] ?? 'UNKNOWN';
-$id = $_GET['id'] ?? null;
+$id = $_GET['campaign_id'] ?? null;
 
 // Build the endpoint file path
 $endpointFile = $baseFolder . '/endpoints/' . strtolower($endpoint) . '.php';

@@ -1,4 +1,5 @@
 export default class Campaign{
+    
     #rooms;
     #options;
     #battles;

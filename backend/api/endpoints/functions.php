@@ -9,7 +9,7 @@ switch ($method) {
             $stmt->bind_param("i", $id);
             $stmt->execute();
             $result = $stmt->get_result();
-            $data = $result->fetch_assoc();
+            $data = $result->fetch_all(MYSQLI_ASSOC);
             $stmt->close();
         } else {
             $result = $conn->query("SELECT * FROM functions");
